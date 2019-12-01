@@ -13,34 +13,8 @@
         <h1>Текущие задачи</h1>
         <ul id="todo-list"></ul>
         % for item in result:
-            <li><p>{{item}}</p>
-        % end
-            <!-- % if task.is_completed:
-                <li class="completed">
-                    <input class="checkbox" data-uid={{task.uid}} type="checkbox"
-                       disabled="disabled" checked="checked" />
-            % else:
-                <li>
-                    <input class="checkbox" data-uid="{{ task.uid }}" type="checkbox" />
-            % end
-            {{ task }}
-            <a class="remove" href="/api/delete/{{task.uid}}">X</a>
-            <hr/>
-            </li>
-        % end
-        <br/>
-        % if tc[1]:
-            <p>Всего задач {{tc[0]}}, из которых {{tc[1]}} не выполнено</p>
-        % else:
-            <p>Всего задач {{tc[0]}}</p>
-        % end
-        <form id="todo-add" action="/add-task" method="POST">
-            <input type="text" name="description" id="new-todo-description"/>
-            <button class="add" type="submit">+</button>
-        </form>
-        % if tc[0] > 9:
-            <p>Достигнуто максимальное количество задач (10)</p>
-        % end -->
+            <li>{{item}}
+        % end 
     </div>
     </body>
 </html>
